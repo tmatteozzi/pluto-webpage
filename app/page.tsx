@@ -4,6 +4,7 @@ import { LanguageProvider } from './contexts/LanguageContext';
 import Info1 from './landing/Info1';
 import Info2 from './landing/Info2';
 import Info3 from './landing/Info3';
+import Info4 from './landing/Info4';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Info1 />
         <Info2 />
         <Info3 />
+        <Info4 />
       </main>
     </LanguageProvider>
   );

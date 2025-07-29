@@ -30,11 +30,14 @@ const translations = {
 
     // Info1
     'info1.innovation.title': 'Innovación Constante',
-    'info1.innovation.description': 'Nos dedicamos a crear soluciones tecnológicas que marcan la diferencia, combinando creatividad y eficiencia para potenciar tu negocio.',
+    'info1.innovation.description':
+      'Nos dedicamos a crear soluciones tecnológicas que marcan la diferencia, combinando creatividad y eficiencia para potenciar tu negocio.',
     'info1.team.title': 'Equipo Experto',
-    'info1.team.description': 'Nuestro equipo está formado por profesionales apasionados y altamente capacitados en tecnología y diseño.',
+    'info1.team.description':
+      'Nuestro equipo está formado por profesionales apasionados y altamente capacitados en tecnología y diseño.',
     'info1.solutions.title': 'Soluciones a Medida',
-    'info1.solutions.description': 'Adaptamos cada proyecto a las necesidades de nuestros clientes, asegurando resultados únicos y efectivos.',
+    'info1.solutions.description':
+      'Adaptamos cada proyecto a las necesidades de nuestros clientes, asegurando resultados únicos y efectivos.',
 
     // Info2
     'info2.title': 'Gestión inteligente de tus finanzas',
@@ -54,6 +57,26 @@ const translations = {
     'info3.extra':
       'Nuestra plataforma utiliza tecnología de vanguardia para garantizar que tus datos y transacciones estén siempre seguros. Además, te brindamos herramientas intuitivas para que puedas monitorear y gestionar tu dinero de forma sencilla y personalizada.',
 
+    // Info4
+    'info4.title': 'Descubre el poder de Pluto',
+    'info4.description':
+      'Explora todas las funcionalidades que hacen de Pluto tu compañero financiero perfecto.',
+    'info4.card1.title': 'Transferencias Instantáneas',
+    'info4.card1.description':
+      'Envía dinero a cualquier parte del mundo en segundos con la tecnología más avanzada.',
+    'info4.card1.button': 'Enviar dinero',
+    'info4.card2.title': 'Análisis Inteligente',
+    'info4.card2.description':
+      'Obtén insights detallados sobre tus gastos y ahorros con IA predictiva.',
+    'info4.card2.button': 'Ver análisis',
+    'info4.card3.title': 'Experiencia Completa',
+    'info4.card3.description':
+      'Todo lo que necesitas para gestionar tus finanzas de manera inteligente y segura.',
+    'info4.card3.feature1': 'Interfaz intuitiva diseñada para todos',
+    'info4.card3.feature2': 'Soporte 24/7 con asistente virtual',
+    'info4.card3.feature3': 'Integración con todos tus servicios favoritos',
+    'info4.card3.button': 'Comenzar ahora',
+
     // Common
     'common.pluto': 'Pluto'
   },
@@ -72,11 +95,14 @@ const translations = {
 
     // Info1
     'info1.innovation.title': 'Constant Innovation',
-    'info1.innovation.description': 'We are dedicated to creating technological solutions that make a difference, combining creativity and efficiency to boost your business.',
+    'info1.innovation.description':
+      'We are dedicated to creating technological solutions that make a difference, combining creativity and efficiency to boost your business.',
     'info1.team.title': 'Expert Team',
-    'info1.team.description': 'Our team consists of passionate and highly skilled professionals in technology and design.',
+    'info1.team.description':
+      'Our team consists of passionate and highly skilled professionals in technology and design.',
     'info1.solutions.title': 'Custom Solutions',
-    'info1.solutions.description': 'We adapt each project to our clients\' needs, ensuring unique and effective results.',
+    'info1.solutions.description':
+      "We adapt each project to our clients' needs, ensuring unique and effective results.",
 
     // Info2
     'info2.title': 'Smart financial management',
@@ -96,6 +122,26 @@ const translations = {
     'info3.feature1': 'Biometric and two-factor authentication',
     'info3.feature2': 'Real-time notifications for any activity',
     'info3.feature3': 'Customizable limits and alerts settings',
+
+    // Info4
+    'info4.title': 'Discover the power of Pluto',
+    'info4.description':
+      'Explore all the features that make Pluto your perfect financial companion.',
+    'info4.card1.title': 'Instant Transfers',
+    'info4.card1.description':
+      'Send money anywhere in the world in seconds with the most advanced technology.',
+    'info4.card1.button': 'Send money',
+    'info4.card2.title': 'Smart Analytics',
+    'info4.card2.description':
+      'Get detailed insights about your expenses and savings with predictive AI.',
+    'info4.card2.button': 'View analytics',
+    'info4.card3.title': 'Complete Experience',
+    'info4.card3.description':
+      'Everything you need to manage your finances intelligently and securely.',
+    'info4.card3.feature1': 'Intuitive interface designed for everyone',
+    'info4.card3.feature2': '24/7 support with virtual assistant',
+    'info4.card3.feature3': 'Integration with all your favorite services',
+    'info4.card3.button': 'Get started',
 
     // Common
     'common.pluto': 'Pluto'
