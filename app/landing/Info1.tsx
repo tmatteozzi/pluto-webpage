@@ -12,9 +12,9 @@ export default function Info1() {
 
       <div className="container mx-auto max-w-6xl px-4 relative z-10">
         {/* BENTO GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto">
-          {/* CUADRADO SUPERIOR IZQUIERDO */}
-          <div className="md:col-span-2 h-96 bg-[#171717] rounded-2xl transition-all duration-300 flex flex-col justify-start items-start p-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto">
+          {/* CUADRADO IZQUIERDO */}
+          <div className="h-[500px] bg-[#171717] rounded-2xl transition-all duration-300 flex flex-col justify-start items-start p-8">
             <h2 className="text-3xl font-extrabold mb-2 text-white">
               {t('info1.innovation.title')}
             </h2>
@@ -22,25 +22,14 @@ export default function Info1() {
               {t('info1.innovation.description')}
             </p>
             <div className="mt-auto">
-              <svg
-                className="w-14 h-14 text-blue-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
+              <button className="bg-white text-black px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold shadow-lg hover:bg-gray-200 transition-all duration-300 text-sm sm:text-md hover:scale-105 tracking-tighter">
+                Conocer más
+              </button>
             </div>
           </div>
 
-          {/* CUADRADO SUPERIOR DERECHO */}
-          <div className="h-96 bg-[#171717] rounded-2xl transition-all duration-300 flex flex-col justify-start items-start p-8">
+          {/* CUADRADO DERECHO */}
+          <div className="h-[500px] bg-[#171717] rounded-2xl transition-all duration-300 flex flex-col justify-start items-start p-8">
             <h2 className="text-2xl font-bold mb-2 text-white">
               {t('info1.team.title')}
             </h2>
@@ -48,46 +37,9 @@ export default function Info1() {
               {t('info1.team.description')}
             </p>
             <div className="mt-auto">
-              <svg
-                className="w-12 h-12 text-blue-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-            </div>
-          </div>
-
-          {/* CUADRADO INFERIOR */}
-          <div className="md:col-span-3 h-96 bg-[#171717] rounded-2xl transition-all duration-300 flex flex-col justify-start items-start p-8">
-            <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white">
-              {t('info1.solutions.title')}
-            </h2>
-            <p className="mb-4 text-base md:text-lg text-white/80 max-w-xl">
-              {t('info1.solutions.description')}
-            </p>
-            <div className="mt-auto">
-              <svg
-                className="w-20 h-20 text-blue-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
+              <button className="bg-white text-black px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold shadow-lg hover:bg-gray-200 transition-all duration-300 text-sm sm:text-md hover:scale-105 tracking-tighter">
+                Descargar App
+              </button>
             </div>
           </div>
         </div>

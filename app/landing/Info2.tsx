@@ -21,22 +21,22 @@ export default function Info2() {
             <p className="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8 leading-relaxed tracking-tighter px-2 sm:px-0">
               {t('info2.description')}
             </p>
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
+            <div className="space-y-3 sm:space-y-4 max-w-md mx-auto lg:mx-0">
+              <div className="flex items-start gap-3 px-2 sm:px-0">
                 <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-300 leading-relaxed text-left">
                   {t('info2.feature1')}
                 </p>
               </div>
-              <div className="flex items-start gap-3">
+              <div className="flex items-start gap-3 px-2 sm:px-0">
                 <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-300 leading-relaxed text-left">
                   {t('info2.feature2')}
                 </p>
               </div>
-              <div className="flex items-start gap-3">
+              <div className="flex items-start gap-3 px-2 sm:px-0">
                 <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-300 leading-relaxed text-left">
                   {t('info2.feature3')}
                 </p>
               </div>
