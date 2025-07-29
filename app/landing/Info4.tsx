@@ -6,14 +6,14 @@ export default function Info4() {
   const { t } = useLanguage();
 
   return (
-    <section className="w-full flex items-center bg-[#171717] relative overflow-hidden py-12 sm:py-16 md:py-24">
+    <section className="w-full flex items-center bg-[#171717] relative overflow-hidden py-12 sm:py-16 md:py-24 leading-tight tracking-tighter">
       <div className="container mx-auto px-4 sm:px-6 max-w-6xl relative z-10">
         {/* TÍTULO Y DESCRIPCIÓN */}
         <div className="text-center mb-8 sm:mb-12">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-white leading-tight tracking-tighter">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-white ">
             {t('info4.title')}
           </h2>
-          <p className="text-sm sm:text-md md:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed tracking-tighter px-2">
+          <p className="text-sm sm:text-md md:text-lg text-gray-300 max-w-3xl mx-auto px-2">
             {t('info4.description')}
           </p>
         </div>

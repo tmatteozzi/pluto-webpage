@@ -77,6 +77,14 @@ const translations = {
     'info4.card3.feature3': 'Integración con todos tus servicios favoritos',
     'info4.card3.button': 'Comenzar ahora',
 
+    // Footer
+    'footer.description': 'Tu billetera inteligente del futuro. Potenciada por inteligencia artificial para hacer que tus finanzas sean más simples, seguras y eficientes.',
+    'footer.quickLinks': 'Enlaces rápidos',
+    'footer.contact': 'Contacto',
+    'footer.rights': 'Todos los derechos reservados.',
+    'footer.privacy': 'Política de privacidad',
+    'footer.terms': 'Términos de servicio',
+
     // Common
     'common.pluto': 'Pluto'
   },
@@ -142,6 +150,14 @@ const translations = {
     'info4.card3.feature2': '24/7 support with virtual assistant',
     'info4.card3.feature3': 'Integration with all your favorite services',
     'info4.card3.button': 'Get started',
+
+    // Footer
+    'footer.description': 'Your smart wallet of the future. Powered by artificial intelligence to make your finances simpler, safer and more efficient.',
+    'footer.quickLinks': 'Quick Links',
+    'footer.contact': 'Contact',
+    'footer.rights': 'All rights reserved.',
+    'footer.privacy': 'Privacy Policy',
+    'footer.terms': 'Terms of Service',
 
     // Common
     'common.pluto': 'Pluto'

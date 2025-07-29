@@ -7,7 +7,7 @@ export default function Info2() {
   const { t } = useLanguage();
 
   return (
-    <section className="w-full flex items-center bg-black relative overflow-hidden py-16 sm:py-24">
+    <section className="w-full flex items-center bg-black relative overflow-hidden py-16 sm:py-24 leading-tight tracking-tighter">
       {/* GRADIENTE DE FONDO */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-900/30 to-blue-400/50 blur-3xl scale-150 translate-x-1/4 pointer-events-none"></div>
 
@@ -15,10 +15,10 @@ export default function Info2() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
           {/* CONTENIDO A LA IZQUIERDA */}
           <div className="text-center lg:text-left order-2 lg:order-1">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-white leading-tight tracking-tighter">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-white">
               {t('info2.title')}
             </h2>
-            <p className="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8 leading-relaxed tracking-tighter px-2 sm:px-0">
+            <p className="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8 px-2 sm:px-0">
               {t('info2.description')}
             </p>
             <div className="space-y-3 sm:space-y-4 max-w-md mx-auto lg:mx-0">

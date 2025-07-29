@@ -8,7 +8,7 @@ export default function Info3() {
 
   return (
     <div className="relative">
-      <section className="w-full flex items-center bg-black relative overflow-hidden pb-16 sm:pb-36 pt-8 rounded-b-[4rem]">
+      <section className="w-full flex items-center bg-black relative overflow-hidden pb-16 sm:pb-36 pt-8 rounded-b-[4rem] leading-tight tracking-tighter">
         {/* GRADIENTE DE FONDO */}
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-900/30 to-blue-400/50 blur-3xl scale-150 translate-x-1/4 pointer-events-none rounded-b-[4rem]"></div>
 
@@ -30,13 +30,13 @@ export default function Info3() {
 
             {/* CONTENIDO A LA DERECHA - TEXTO */}
             <div className="text-center lg:text-left order-2 lg:order-2">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-white leading-tight tracking-tighter">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-white">
                 {t('info3.title')}
               </h2>
-              <p className="text-base sm:text-lg text-gray-300 mb-4 sm:mb-6 leading-relaxed tracking-tighter px-2 sm:px-0">
+              <p className="text-base sm:text-lg text-gray-300 mb-4 sm:mb-6 px-2 sm:px-0">
                 {t('info3.description')}
               </p>
-              <p className="text-base sm:text-lg text-gray-400 mb-6 sm:mb-8 leading-relaxed tracking-tighter px-2 sm:px-0">
+              <p className="text-base sm:text-lg text-gray-400 mb-6 sm:mb-8 px-2 sm:px-0">
                 {t('info3.extra')}
               </p>
             </div>
