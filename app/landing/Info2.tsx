@@ -7,7 +7,7 @@ export default function Info2() {
   const { t } = useLanguage();
 
   return (
-    <section className="w-full flex items-center bg-black relative overflow-hidden py-16 sm:py-24 leading-tight tracking-tighter">
+    <section className="w-full flex items-center bg-black relative overflow-hidden leading-tight tracking-tighter">
       {/* GRADIENTE DE FONDO */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-900/30 to-blue-400/50 blur-3xl scale-150 translate-x-1/4 pointer-events-none"></div>
 
@@ -47,11 +47,11 @@ export default function Info2() {
           <div className="flex items-center justify-center order-1 lg:order-2 mb-6 lg:mb-0">
             <div className="relative">
               <Image
-                src="/mockup.png"
+                src="/mockup7.png"
                 alt="Pluto App Features"
-                width={800}
-                height={800}
-                className="relative w-64 h-64 md:w-80 md:h-80 lg:w-[500px] lg:h-[500px] rounded-2xl object-cover"
+                width={1000}
+                height={1000}
+                className="relative w-64 h-64 md:w-80 md:h-80 lg:w-[40vh] lg:h-auto sm:pb-22"
                 priority
               />
             </div>
