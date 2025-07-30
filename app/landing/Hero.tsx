@@ -11,7 +11,7 @@ export default function Hero() {
       {/* GRADIENTE DE FONDO */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-900/30 to-blue-400/50 blur-3xl scale-150 translate-x-1/4 pointer-events-none"></div>
 
-      <div className="container mx-auto px-4 sm:px-6 max-w-6xl relative z-10">
+      <div className="container mx-auto px-4 max-w-6xl relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
           {/* CONTENIDO A LA IZQUIERDA */}
           <div className="text-center lg:text-left order-2 lg:order-1">

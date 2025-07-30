@@ -8,7 +8,7 @@ export default function Info4() {
 
   return (
     <section className="w-full flex items-center bg-[#171717] relative overflow-hidden py-12 sm:py-16 md:py-24 leading-tight tracking-tighter">
-      <div className="container mx-auto px-4 sm:px-6 max-w-6xl relative z-10">
+      <div className="container mx-auto px-4 max-w-6xl relative z-10">
         {/* TÍTULO Y DESCRIPCIÓN */}
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-white ">

@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Navbar() {
@@ -15,7 +16,14 @@ export default function Navbar() {
       <div className="container mx-auto px-4 max-w-6xl mt-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo/Texto a la izquierda */}
-          <div className="flex items-center">
+          <div className="flex items-center space-x-2">
+            <Image
+              src="/logo.png"
+              alt="Pluto Logo"
+              width={100}
+              height={100}
+              className="w-6 h-6"
+            />
             <Link
               href="/"
               className="text-2xl font-bold text-white hover:text-gray-200 transition-colors tracking-tighter"
