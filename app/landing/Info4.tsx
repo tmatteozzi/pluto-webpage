@@ -1,6 +1,7 @@
 'use client';
 
 import { useLanguage } from '../contexts/LanguageContext';
+import Image from 'next/image';
 
 export default function Info4() {
   const { t } = useLanguage();
@@ -23,7 +24,7 @@ export default function Info4() {
           {/* PRIMERA COLUMNA - 2 GRIDS VERTICALES */}
           <div className="flex flex-col gap-3 sm:gap-4 lg:gap-6 h-full">
             {/* PRIMER CUADRADO */}
-            <div className="flex-1 bg-[#000109] rounded-xl sm:rounded-2xl transition-all duration-300 flex flex-col justify-start items-start p-4 sm:p-6 lg:p-8 hover:bg-[#16213e] hover:scale-[1.02] min-h-[180px] sm:min-h-[200px]">
+            <div className="flex-1 bg-[#000109] rounded-xl sm:rounded-2xl transition-all duration-300 flex flex-col justify-start items-start p-4 sm:p-6 lg:p-8 hover:bg-[#16213e] hover:scale-[1.02] min-h-[180px] sm:min-h-[200px] relative">
               <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 text-white">
                 {t('info4.card1.title')}
               </h3>
@@ -34,6 +35,17 @@ export default function Info4() {
                 <button className="w-full sm:w-auto bg-white text-black px-3 sm:px-4 py-2 rounded-lg sm:rounded-xl font-semibold shadow-lg hover:bg-gray-200 transition-all duration-300 text-xs sm:text-sm hover:scale-105 tracking-tighter">
                   {t('info4.card1.button')}
                 </button>
+              </div>
+              {/* Imagen en la esquina inferior derecha con Next.js Image */}
+              <div className="hidden sm:block absolute right-0 bottom-0 z-10 pointer-events-none select-none">
+                <Image
+                  src="/mockup4.png"
+                  alt="Mockup 4"
+                  width={1000}
+                  height={1000}
+                  className="w-[280px] h-auto"
+                  priority
+                />
               </div>
             </div>
 

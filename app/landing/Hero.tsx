@@ -50,7 +50,7 @@ export default function Hero() {
                 alt="Pluto App Mockup"
                 width={1000}
                 height={1000}
-                className="relative w-72 h-72 md:w-96 md:h-96 lg:w-[600px] lg:h-[600px] rounded-2xl object-cover"
+                className="relative w-72 h-72 md:w-96 md:h-96 lg:w-[650px] lg:h-[650px] rounded-2xl object-cover"
                 priority
               />
             </div>
