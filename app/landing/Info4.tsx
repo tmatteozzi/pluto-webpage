@@ -11,7 +11,7 @@ export default function Info4() {
       <div className="container mx-auto px-4 sm:px-6 max-w-6xl relative z-10">
         {/* TÍTULO Y DESCRIPCIÓN */}
         <div className="text-center mb-8 sm:mb-12">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-white ">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-white ">
             {t('info4.title')}
           </h2>
           <p className="text-sm sm:text-md md:text-lg text-gray-300 max-w-3xl mx-auto px-2">
@@ -20,12 +20,12 @@ export default function Info4() {
         </div>
 
         {/* BENTO GRID */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 lg:gap-6 min-h-[400px] sm:min-h-[500px] lg:h-[650px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 min-h-[400px] sm:min-h-[500px] lg:h-[650px]">
           {/* PRIMERA COLUMNA - 2 GRIDS VERTICALES */}
-          <div className="flex flex-col gap-3 sm:gap-4 lg:gap-6 h-full">
+          <div className="flex flex-col gap-3 h-full">
             {/* PRIMER CUADRADO */}
-            <div className="flex-1 bg-[#000109] rounded-xl sm:rounded-2xl transition-all duration-300 flex flex-col justify-start items-start p-4 sm:p-6 lg:p-8 hover:bg-[#16213e] hover:scale-[1.02] min-h-[180px] sm:min-h-[200px] relative">
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 text-white">
+            <div className="flex-1 bg-[#000109] rounded-[32px] transition-all duration-300 flex flex-col justify-start items-start p-4 sm:p-6 lg:p-8 hover:bg-[#16213e] hover:scale-[1.02] min-h-[180px] sm:min-h-[200px] relative">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-3 text-white">
                 {t('info4.card1.title')}
               </h3>
               <p className="text-xs sm:text-sm lg:text-base text-white/80 leading-relaxed flex-1">
@@ -36,7 +36,6 @@ export default function Info4() {
                   {t('info4.card1.button')}
                 </button>
               </div>
-              {/* Imagen en la esquina inferior derecha con Next.js Image */}
               <div className="hidden sm:block absolute right-0 bottom-0 z-10 pointer-events-none select-none">
                 <Image
                   src="/mockup4.png"
@@ -50,8 +49,8 @@ export default function Info4() {
             </div>
 
             {/* SEGUNDO CUADRADO */}
-            <div className="flex-1 bg-[#000109] rounded-xl sm:rounded-2xl transition-all duration-300 flex flex-col justify-start items-start p-4 sm:p-6 lg:p-8 hover:bg-[#16213e] hover:scale-[1.02] min-h-[180px] sm:min-h-[200px]">
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 text-white">
+            <div className="flex-1 bg-[#000109] rounded-[32px] transition-all duration-300 flex flex-col justify-start items-start p-4 sm:p-6 lg:p-8 hover:bg-[#16213e] hover:scale-[1.02] min-h-[180px] sm:min-h-[200px] relative">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-3 text-white">
                 {t('info4.card2.title')}
               </h3>
               <p className="text-xs sm:text-sm lg:text-base text-white/80 leading-relaxed flex-1">
@@ -62,11 +61,21 @@ export default function Info4() {
                   {t('info4.card2.button')}
                 </button>
               </div>
+              <div className="hidden sm:block absolute right-13 bottom-4 z-10 pointer-events-none select-none">
+                <Image
+                  src="/finance.png"
+                  alt="Mockup 5"
+                  width={1000}
+                  height={1000}
+                  className="w-[180px] h-auto"
+                  priority
+                />
+              </div>
             </div>
           </div>
 
           {/* SEGUNDA COLUMNA - COMPLETA */}
-          <div className="h-full bg-[#000109] rounded-xl sm:rounded-2xl transition-all duration-300 flex flex-col justify-start items-start p-4 sm:p-6 lg:p-8 hover:bg-[#16213e] hover:scale-[1.02] min-h-[300px] sm:min-h-[400px]">
+          <div className="h-full bg-[#000109] rounded-[32px] transition-all duration-300 flex flex-col justify-start items-start p-4 sm:p-6 lg:p-8 hover:bg-[#16213e] hover:scale-[1.02] min-h-[300px] sm:min-h-[400px] relative">
             <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4 text-white">
               {t('info4.card3.title')}
             </h3>
