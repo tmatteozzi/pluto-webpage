@@ -6,7 +6,7 @@ export default function Hero() {
   const { t } = useLanguage();
 
   return (
-    <section className="h-screen w-full flex items-center justify-center bg-black relative overflow-hidden">
+    <section className="h-screen w-full flex items-center justify-center bg-black relative overflow-visible">
       <div className="flex flex-col items-center justify-start h-full pt-36 w-xl">
         <h1 className="text-5xl md:text-2xl lg:text-6xl text-center font-[600] text-white mb-6 tracking-tight leading-[1]">
           Try Pluto AI
@@ -25,7 +25,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="w-lg aspect-square bg-white absolute blur-xl -bottom-[316px] rounded-full left-1/2 -translate-x-1/2"></div>
-      <div className="custom-shape-divider-bottom-1754088585 z-10">
+      {/* <div className="custom-shape-divider-bottom-1754088585 z-10">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ export default function Hero() {
             className="shape-fill"
           ></path>
         </svg>
-      </div>
+      </div> */}
     </section>
   );
 }

@@ -7,16 +7,16 @@ export default function Info1() {
   const { t } = useLanguage();
 
   return (
-    <section className="min-h-screen w-full flex items-center bg-neutral-900 relative overflow-hidden py-8 sm:py-0 leading-tight">
+    <section className="min-h-screen w-full flex items-center relative overflow-hidden py-8 sm:py-0 leading-tight">
       <div className="w-3xl mx-auto relative flex items-center justify-between gap-12">
-        <div className="flex items-center justify-between w-1/2 h-full relative">
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-neutral-900"></div>
+        <div className="flex items-center justify-between w-1/2 h-full relative bg-neutral-900 rounded-3xl overflow-hidden">
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-transparent via-transparent to-neutral-900"></div>
           <Image
-            src="/mockup4.png"
+            src="/mock-speaker.png"
             alt="Pluto Logo"
-            width={800}
-            height={800}
-            className="h-2/3"
+            width={1000}
+            height={1000}
+            className="h-full"
           />
         </div>
         <div className="flex flex-col items-start justify-between w-1/2 h-full">
