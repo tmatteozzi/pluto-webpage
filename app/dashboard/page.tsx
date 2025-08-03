@@ -29,6 +29,7 @@ import {
   Wallet05Icon,
 } from "@hugeicons/core-free-icons";
 import { useWallet } from "@/app/contexts/WalletContext";
+import Link from "next/link";
 
 export default function Dashboard() {
   const { balance, loading } = useWallet();
@@ -80,7 +81,10 @@ export default function Dashboard() {
                 </Badge>
               </CardContent>
               <CardFooter className="px-4 mb-0 pb-4 gap-2">
-                <button className="max-w-[300px] w-full bg-foreground  rounded-full py-2 flex items-center justify-center gap-2">
+                <Link
+                  href="/dashboard/fund"
+                  className="max-w-[300px] w-full bg-foreground  rounded-full py-2 flex items-center justify-center gap-2"
+                >
                   <HugeiconsIcon
                     icon={MoneyReceiveSquareIcon}
                     size={20}
@@ -90,8 +94,11 @@ export default function Dashboard() {
                   <span className="text-sm font-medium text-background">
                     Ingresar dinero
                   </span>
-                </button>
-                <button className="max-w-[300px] w-full border border-border  rounded-full py-2 flex items-center justify-center gap-2">
+                </Link>
+                <Link
+                  href="/dashboard/transfer"
+                  className="max-w-[300px] w-full border border-border  rounded-full py-2 flex items-center justify-center gap-2"
+                >
                   <HugeiconsIcon
                     icon={MoneyReceiveSquareIcon}
                     size={20}
@@ -101,7 +108,7 @@ export default function Dashboard() {
                   <span className="text-sm font-medium text-foreground">
                     Transferir dinero
                   </span>
-                </button>
+                </Link>
               </CardFooter>
             </Card>
 

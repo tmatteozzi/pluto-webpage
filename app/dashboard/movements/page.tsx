@@ -114,7 +114,7 @@ export default function MovementsPage() {
   const groupedTransactions = groupTransactionsByDate(mockTransactions);
 
   return (
-    <div className="min-h-screen p-4 pt-15 bg-background overflow-y-auto table-scroll">
+    <div className="min-h-screen py-4 px-2 pt-15 bg-background overflow-y-auto table-scroll">
       <div className="w-full mx-auto space-y-4 bg-card rounded-2xl p-4">
         <div className="flex items-center gap-2 text-sm font-medium tracking-normal">
           <HugeiconsIcon
