@@ -154,12 +154,6 @@ export const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, onToggle }) => {
       href: "/dashboard/movements",
       isActive: pathname === "/dashboard/movements",
     },
-    {
-      icon: UserIcon,
-      label: "Profile",
-      href: "/dashboard/profile",
-      isActive: pathname === "/dashboard/profile",
-    },
   ];
 
   return (

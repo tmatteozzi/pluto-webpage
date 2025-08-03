@@ -28,9 +28,10 @@ import {
   MoneyReceiveSquareIcon,
   Wallet05Icon,
 } from "@hugeicons/core-free-icons";
+import { useWallet } from "@/app/contexts/WalletContext";
 
 export default function Dashboard() {
-  const [balance, setBalance] = useState(1250.75);
+  const { balance, loading } = useWallet();
   const [chatMessage, setChatMessage] = useState("");
 
   const handleSendMessage = () => {
@@ -40,6 +41,9 @@ export default function Dashboard() {
       setChatMessage("");
     }
   };
+
+  // Mostrar loading mientras se carga el balance
+  const displayBalance = loading ? "Cargando..." : (balance ?? 0);
 
   return (
     <div className="min-h-screen p-2">
@@ -62,10 +66,13 @@ export default function Dashboard() {
               </CardHeader>
               <CardContent className="px-4">
                 <div className="text-4xl font-bold mb-2">
-                  $
-                  {balance.toLocaleString("es-ES", {
-                    minimumFractionDigits: 2,
-                  })}
+                  {loading ? (
+                    <span className="text-2xl">Cargando...</span>
+                  ) : (
+                    `$${displayBalance.toLocaleString("es-ES", {
+                      minimumFractionDigits: 2,
+                    })}`
+                  )}
                 </div>
                 <Badge variant="secondary" className="bg-white/20 text-white">
                   <TrendingUp className="h-3 w-3 mr-1" />

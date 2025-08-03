@@ -9,8 +9,15 @@ import {
   CreditCardIcon,
   BankIcon,
   PieChart04Icon,
+  ArrowDataTransferDiagonalIcon,
 } from "@hugeicons/core-free-icons";
 import { ChevronDown, Wallet } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 // Datos de ejemplo para las transacciones
 const mockTransactions = [
@@ -108,62 +115,200 @@ export default function MovementsPage() {
 
   return (
     <div className="min-h-screen p-4 pt-15 bg-background overflow-y-auto table-scroll">
-      <div className="w-full mx-auto space-y-4  bg-card rounded-2xl p-4">
+      <div className="w-full mx-auto space-y-4 bg-card rounded-2xl p-4">
         <div className="flex items-center gap-2 text-sm font-medium tracking-normal">
           <HugeiconsIcon
-            icon={PieChart04Icon}
+            icon={ArrowDataTransferDiagonalIcon}
             size={20}
             color={"var(--foreground)"}
             fill={"none"}
           />
           Transacciones
         </div>
+
         {/* Barra de filtros */}
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Button
-              variant="outline"
-              className="bg-card flex items-center gap-2 text-sm border-border text-neutral-400"
-            >
-              Período
-              <ChevronDown className="h-4 w-4" />
-            </Button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button
+                  variant="outline"
+                  className="bg-card flex items-center gap-2 text-sm border-border text-neutral-400 rounded-2xl px-3 py-1"
+                >
+                  {selectedPeriod}
+                  <ChevronDown className="h-4 w-4" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-card w-full px-3 pr-8">
+                <DropdownMenuItem onClick={() => setSelectedPeriod("Hoy")}>
+                  Hoy
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => setSelectedPeriod("Últimos 7 días")}
+                >
+                  Últimos 7 días
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => setSelectedPeriod("Últimos 30 días")}
+                >
+                  Últimos 30 días
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => setSelectedPeriod("Últimos 90 días")}
+                >
+                  Últimos 90 días
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => setSelectedPeriod("Este año")}>
+                  Este año
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => setSelectedPeriod("Personalizado")}
+                >
+                  Personalizado
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
 
-            <Button
-              variant="outline"
-              className="bg-card flex items-center gap-2 text-sm border-border text-neutral-400"
-            >
-              Operaciones
-              <ChevronDown className="h-4 w-4" />
-            </Button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button
+                  variant="outline"
+                  className="bg-card flex items-center gap-2 text-sm border-border text-neutral-400 rounded-2xl px-3 py-1"
+                >
+                  {selectedOperations}
+                  <ChevronDown className="h-4 w-4" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem
+                  onClick={() => setSelectedOperations("Todas")}
+                >
+                  Todas
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => setSelectedOperations("Pagos")}
+                >
+                  Pagos
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => setSelectedOperations("Transferencias")}
+                >
+                  Transferencias
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => setSelectedOperations("Depósitos")}
+                >
+                  Depósitos
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => setSelectedOperations("Retiros")}
+                >
+                  Retiros
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => setSelectedOperations("Compras")}
+                >
+                  Compras
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
 
-            <Button
-              variant="outline"
-              className="bg-card flex items-center gap-2 text-sm border-border text-neutral-400"
-            >
-              Estados
-              <ChevronDown className="h-4 w-4" />
-            </Button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button
+                  variant="outline"
+                  className="bg-card flex items-center gap-2 text-sm border-border text-neutral-400 rounded-2xl px-3 py-1"
+                >
+                  {selectedStatuses}
+                  <ChevronDown className="h-4 w-4" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem onClick={() => setSelectedStatuses("Todos")}>
+                  Todos
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => setSelectedStatuses("Completadas")}
+                >
+                  Completadas
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => setSelectedStatuses("Pendientes")}
+                >
+                  Pendientes
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => setSelectedStatuses("Fallidas")}
+                >
+                  Fallidas
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => setSelectedStatuses("Canceladas")}
+                >
+                  Canceladas
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
 
-            <Button
-              variant="outline"
-              className="bg-card flex items-center gap-2 text-sm border-border text-neutral-400"
-            >
-              Medios de pago
-              <ChevronDown className="h-4 w-4" />
-            </Button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button
+                  variant="outline"
+                  className="bg-card flex items-center gap-2 text-sm border-border text-neutral-400 rounded-2xl px-3 py-1"
+                >
+                  {selectedPaymentMethods}
+                  <ChevronDown className="h-4 w-4" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem
+                  onClick={() => setSelectedPaymentMethods("Todos")}
+                >
+                  Todos
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() =>
+                    setSelectedPaymentMethods("Tarjeta de crédito")
+                  }
+                >
+                  Tarjeta de crédito
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => setSelectedPaymentMethods("Tarjeta de débito")}
+                >
+                  Tarjeta de débito
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() =>
+                    setSelectedPaymentMethods("Transferencia bancaria")
+                  }
+                >
+                  Transferencia bancaria
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => setSelectedPaymentMethods("Efectivo")}
+                >
+                  Efectivo
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => setSelectedPaymentMethods("Billetera digital")}
+                >
+                  Billetera digital
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
 
         {/* Lista de transacciones */}
         <div className="space-y-6">
           {Object.entries(groupedTransactions).map(([date, transactions]) => (
-            <div key={date} className="space-y-3">
+            <div key={date} className="space-y-1">
               {/* Header de fecha */}
               <h3 className="text-lg font-medium text-foreground">{date}</h3>
 
               {/* Transacciones del día */}
-              <div className="space-y-2">
+              <div className="">
                 {transactions.map((transaction) => (
                   <div
                     key={transaction.id}

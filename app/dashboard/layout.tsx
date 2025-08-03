@@ -2,6 +2,7 @@ import type React from "react";
 import { createServerClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { DashboardWrapper } from "@/components/DashboardWrapper";
+import { WalletProvider } from "@/app/contexts/WalletContext";
 
 export default async function DashboardLayout({
   children,
@@ -19,5 +20,9 @@ export default async function DashboardLayout({
     redirect("/login");
   }
 
-  return <DashboardWrapper>{children}</DashboardWrapper>;
+  return (
+    <WalletProvider user={user}>
+      <DashboardWrapper>{children}</DashboardWrapper>
+    </WalletProvider>
+  );
 }
