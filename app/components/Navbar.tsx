@@ -58,9 +58,12 @@ export default function Navbar() {
             </button> */}
 
             {/* Botón Abrir cuenta */}
-            <button className="cursor-pointer bg-white rounded-full text-black px-4 py-2 font-[600] hover:bg-gray-200 transition-all duration-300 tracking-tight">
+            <Link
+              href="/login"
+              className="cursor-pointer bg-white rounded-full text-black px-4 py-2 font-[600] hover:bg-gray-200 transition-all duration-300 tracking-tight"
+            >
               {t("nav.openAccount")}
-            </button>
+            </Link>
           </div>
         </div>
       </div>
