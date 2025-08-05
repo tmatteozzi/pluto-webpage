@@ -51,7 +51,7 @@ export default function Dashboard() {
       <div className="w-full mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 divide-x">
           {/* Sección de Wallet - Izquierda */}
-          <div className="space-y-2 pt-13 pr-2 overflow-y-auto h-screen table-scroll">
+          <div className="space-y-2 pt-13 pr-1 overflow-y-auto h-screen table-scroll pb-64">
             {/* Tarjeta de Saldo */}
             <Card className="bg-card text-white border-0 shadow-lg rounded-2xl">
               <CardHeader className="p-4">
@@ -187,7 +187,7 @@ export default function Dashboard() {
             <div className="w-full relative flex-1 flex items-center justify-center flex-col space-y-8">
               <div className="w-28 h-28 bg-foreground rounded-full -mt-12"></div>
               <div className="flex flex-col items-center gap-2 w-full space-y-4 px-10">
-                <h1 className="text-4xl font-medium">
+                <h1 className="text-3xl 2xl:text-4xl font-medium text-center">
                   Let's work on your finances
                 </h1>
                 <div className="w-full">

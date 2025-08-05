@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useLanguage } from '../contexts/LanguageContext';
+import Link from "next/link";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Footer() {
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-[#171717] py-12 sm:py-16">
+    <footer className="bg-background pt-16 overflow-hidden relative">
       <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 sm:gap-12">
           {/* Logo y descripción */}
@@ -16,17 +16,17 @@ export default function Footer() {
               href="/"
               className="text-3xl font-extrabold text-white hover:text-gray-200 transition-colors tracking-tighter mb-6 inline-block"
             >
-              {t('common.pluto')}
+              {t("common.pluto")}
             </Link>
             <p className="text-white/80 text-base leading-relaxed max-w-md tracking-tighter">
-              {t('footer.description')}
+              {t("footer.description")}
             </p>
           </div>
 
           {/* Enlaces rápidos */}
           <div>
             <h3 className="text-white font-bold mb-6 tracking-tighter text-lg">
-              {t('footer.quickLinks')}
+              {t("footer.quickLinks")}
             </h3>
             <ul className="space-y-3">
               <li>
@@ -34,7 +34,7 @@ export default function Footer() {
                   href="#features"
                   className="text-white/70 hover:text-white transition-colors text-sm tracking-tighter"
                 >
-                  {t('nav.features')}
+                  {t("nav.features")}
                 </Link>
               </li>
               <li>
@@ -42,7 +42,7 @@ export default function Footer() {
                   href="#pricing"
                   className="text-white/70 hover:text-white transition-colors text-sm tracking-tighter"
                 >
-                  {t('nav.pricing')}
+                  {t("nav.pricing")}
                 </Link>
               </li>
               <li>
@@ -50,7 +50,7 @@ export default function Footer() {
                   href="#contact"
                   className="text-white/70 hover:text-white transition-colors text-sm tracking-tighter"
                 >
-                  {t('nav.contact')}
+                  {t("nav.contact")}
                 </Link>
               </li>
             </ul>
@@ -59,7 +59,7 @@ export default function Footer() {
           {/* Contacto */}
           <div>
             <h3 className="text-white font-bold mb-6 tracking-tighter text-lg">
-              {t('footer.contact')}
+              {t("footer.contact")}
             </h3>
             <ul className="space-y-3">
               <li>
@@ -86,23 +86,31 @@ export default function Footer() {
         <div className="mt-12">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/50 text-sm tracking-tighter">
-              © 2024 {t('common.pluto')}. {t('footer.rights')}
+              © 2024 {t("common.pluto")}. {t("footer.rights")}
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link
                 href="/privacy"
                 className="text-white/50 hover:text-white transition-colors text-sm tracking-tighter"
               >
-                {t('footer.privacy')}
+                {t("footer.privacy")}
               </Link>
               <Link
                 href="/terms"
                 className="text-white/50 hover:text-white transition-colors text-sm tracking-tighter"
               >
-                {t('footer.terms')}
+                {t("footer.terms")}
               </Link>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="h-auto w-full">
+        <div className="flex flex-col items-center justify-center h-[275px] w-full relative">
+          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-b from-background/50 to-background/95 z-10"></div>
+          <h3 className="text-foreground text-[22.125vw] font-bold absolute bottom-0 left-[50%] -translate-x-1/2 whitespace-nowrap leading-[14vw]">
+            Pluto AI
+          </h3>
         </div>
       </div>
     </footer>
