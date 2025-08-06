@@ -10,6 +10,7 @@ import Info3 from "./landing/Info3";
 import Info4 from "./landing/Info4";
 import Footer from "./components/Footer";
 import Bento from "./components/Bento";
+import Features from "./components/Features";
 
 export default function Home() {
   return (
@@ -19,7 +20,8 @@ export default function Home() {
         <Hero />
 
         <Info1 />
-        <Bento />
+        {/* <Bento /> */}
+        <Features />
         <Info2 />
 
         <Info3 />
