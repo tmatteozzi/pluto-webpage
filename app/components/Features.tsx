@@ -325,8 +325,8 @@ const features: Feature[] = [
     design: (
       <div className="w-full h-full relative flex items-center justify-center p-4">
         {/* Top Card */}
-        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-background to-background/0 z-10 pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-background to-background/0 z-10 pointer-events-none"></div>
+        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-card to-card/0 z-10 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-card to-card/0 z-10 pointer-events-none"></div>
         <PlutoSendMoneyAnimation />
       </div>
     ),
@@ -339,12 +339,12 @@ const features: Feature[] = [
     design: (
       <div className="w-full h-full relative flex items-center justify-center p-4">
         {/* Top Card */}
-        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-background to-background/0 z-10 pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-background to-background/0 z-10 pointer-events-none"></div>
+        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-card to-card/0 z-10 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-card to-card/0 z-10 pointer-events-none"></div>
         <div className="self-center p-4 border border-border rounded-2xl relative">
           <HugeiconsIcon icon={EnergyIcon} className="h-12 w-12 text-primary" />
         </div>
-        <div className="bg-gradient-to-r bg-background via-white to-background/10 w-full relative h-[1px]"></div>
+        <div className="bg-gradient-to-r bg-card via-white to-card/10 w-full relative h-[1px]"></div>
         <div className="py-3 px-5 flex justify-center items-center border border-border rounded-full tracking-tight relative w-[80%]">
           <AnimatedTransactionText />
         </div>
@@ -359,8 +359,8 @@ const features: Feature[] = [
     design: (
       <div className="w-full h-full relative flex items-center justify-center p-4">
         {/* Top Card */}
-        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-background to-background/0 z-10 pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-background to-background/0 z-10 pointer-events-none"></div>
+        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-card to-card/0 z-10 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-card to-card/0 z-10 pointer-events-none"></div>
         <PlutoChatAnimation />
       </div>
     ),
@@ -372,9 +372,9 @@ const features: Feature[] = [
     description:
       "Text, numbers, dates, emails, URLs, files, images, selections and more specialized data types.",
     design: (
-      <div className="w-full h-full relative overflow-hidden bg-background">
-        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-background to-background/0 z-10 pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-background to-background/0 z-10 pointer-events-none"></div>
+      <div className="w-full h-full relative overflow-hidden bg-card">
+        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-card to-card/0 z-10 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-card to-card/0 z-10 pointer-events-none"></div>
 
         <div className="w-full h-full flex flex-col justify-center items-center overflow-hidden p-0 m-0 relative">
           <div className="vertical-marquee-wrapper">
@@ -507,7 +507,7 @@ export default function Features({
             return (
               <div
                 key={index}
-                className={`group p-6 transition-all flex flex-col justify-start items-start border rounded-2xl`}
+                className={`group p-6 transition-all flex flex-col justify-start items-start bg-card rounded-2xl`}
               >
                 <div className="flex items-center justify-center mb-4">
                   <HugeiconsIcon
