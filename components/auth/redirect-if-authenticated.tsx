@@ -33,11 +33,13 @@ export function RedirectIfAuthenticated({
 
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange((event: any, session: any) => {
-      if (session?.user) {
-        router.push(redirectTo);
+    } = supabase.auth.onAuthStateChange(
+      (event: string, session: { user: any } | null) => {
+        if (session?.user) {
+          router.push(redirectTo);
+        }
       }
-    });
+    );
 
     return () => subscription.unsubscribe();
   }, [router, redirectTo, supabase.auth]);

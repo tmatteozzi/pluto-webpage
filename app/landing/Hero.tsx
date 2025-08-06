@@ -1,10 +1,6 @@
 "use client";
 
-import { useLanguage } from "../contexts/LanguageContext";
-
 export default function Hero() {
-  const { t } = useLanguage();
-
   return (
     <section className="h-screen w-full flex items-center justify-center bg-black relative overflow-visible">
       <div className="flex flex-col items-center justify-start h-full pt-36 w-xl">

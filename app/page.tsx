@@ -9,7 +9,6 @@ import Info2 from "./landing/Info2";
 import Info3 from "./landing/Info3";
 import Info4 from "./landing/Info4";
 import Footer from "./components/Footer";
-import Bento from "./components/Bento";
 import Features from "./components/Features";
 
 export default function Home() {

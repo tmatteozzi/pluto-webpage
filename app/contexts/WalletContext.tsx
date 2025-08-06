@@ -64,7 +64,7 @@ export const WalletProvider: React.FC<WalletProviderProps> = ({
     } else {
       setBalance(null);
     }
-  }, [user]);
+  }, [user, fetchBalance]);
 
   return (
     <WalletContext.Provider

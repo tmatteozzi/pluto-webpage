@@ -1,11 +1,6 @@
-"use client";
-
 import Image from "next/image";
-import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Info1() {
-  const { t } = useLanguage();
-
   return (
     <section className="min-h-screen w-full flex items-center relative overflow-hidden py-8 sm:py-0 leading-tight">
       <div className="w-3xl mx-auto relative flex items-center justify-between gap-12">

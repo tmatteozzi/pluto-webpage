@@ -7,10 +7,6 @@ import { useLanguage } from "../contexts/LanguageContext";
 export default function Navbar() {
   const { language, setLanguage, t } = useLanguage();
 
-  const toggleLanguage = () => {
-    setLanguage(language === "ES" ? "EN" : "ES");
-  };
-
   return (
     <nav className="fixed top-0 left-0 right-0 z-50">
       <div className="w-xl mx-auto px-4 py-3 bg-[#171717]/50 backdrop-blur-lg mt-4 rounded-full">

@@ -106,7 +106,8 @@ const SettingsDialog: React.FC<SettingsDialogProps> = ({
                 </div>
                 <span className="text-xs text-muted-foreground mt-1">
                   For best results, select the language you mainly speak. If
-                  it's not listed, it may still be supported via auto-detection.
+                  it&apos;s not listed, it may still be supported via
+                  auto-detection.
                 </span>
               </div>
               <div className="py-4 flex items-center justify-between">

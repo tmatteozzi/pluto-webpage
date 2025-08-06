@@ -3,14 +3,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { HugeiconsIcon } from "@hugeicons/react";
-import {
-  WalletIcon,
-  ShoppingBagIcon,
-  CreditCardIcon,
-  BankIcon,
-  PieChart04Icon,
-  ArrowDataTransferDiagonalIcon,
-} from "@hugeicons/core-free-icons";
+import { ArrowDataTransferDiagonalIcon } from "@hugeicons/core-free-icons";
 import { ChevronDown, Wallet } from "lucide-react";
 import {
   DropdownMenu,

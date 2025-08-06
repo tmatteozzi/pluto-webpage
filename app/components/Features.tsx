@@ -1,14 +1,10 @@
 "use client";
 
-import { Card, CardDescription, CardTitle } from "@/components/ui/card";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { useState, useEffect } from "react";
 import {
-  CursorMagicSelection04Icon,
-  InsertRowIcon,
   MoreIcon,
   UserGroupIcon,
-  BarChartIcon,
   LockIcon,
   TextIcon,
   CalendarIcon,
@@ -57,7 +53,7 @@ function usePlutoAnimation() {
       setCurrentWave(0);
 
       // Secuencia de ondas
-      const waveTimers = [0, 200, 400, 600].map((delay, index) =>
+      [0, 200, 400, 600].map((delay, index) =>
         setTimeout(() => setCurrentWave(index + 1), delay)
       );
 
@@ -508,9 +504,6 @@ export default function Features({
 
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-4">
           {featuresToRender.map((feature, index) => {
-            const isLastRow = index >= featuresToRender.length - 2;
-            const isLastColumn = index % 2 === 1;
-
             return (
               <div
                 key={index}

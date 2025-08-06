@@ -8,19 +8,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
-import {
-  Wallet,
-  Plus,
-  Send,
-  Download,
-  CreditCard,
-  TrendingUp,
-  MessageCircle,
-} from "lucide-react";
+import { TrendingUp } from "lucide-react";
 import { HugeiconsIcon } from "@hugeicons/react";
 import {
   ArrowDataTransferDiagonalIcon,
@@ -34,14 +23,6 @@ import Link from "next/link";
 export default function Dashboard() {
   const { balance, loading } = useWallet();
   const [chatMessage, setChatMessage] = useState("");
-
-  const handleSendMessage = () => {
-    if (chatMessage.trim()) {
-      // Aquí se implementaría la lógica para enviar el mensaje a la IA
-      console.log("Mensaje enviado:", chatMessage);
-      setChatMessage("");
-    }
-  };
 
   // Mostrar loading mientras se carga el balance
   const displayBalance = loading ? "Cargando..." : (balance ?? 0);
@@ -188,7 +169,7 @@ export default function Dashboard() {
               <div className="w-28 h-28 bg-foreground rounded-full -mt-12"></div>
               <div className="flex flex-col items-center gap-2 w-full space-y-4 px-10">
                 <h1 className="text-3xl 2xl:text-4xl font-medium text-center">
-                  Let's work on your finances
+                  Let&apos;s work on your finances
                 </h1>
                 <div className="w-full">
                   <textarea

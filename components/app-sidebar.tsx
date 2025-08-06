@@ -1,30 +1,11 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import {
-  PanelLeftClose,
-  PanelLeftOpen,
-  MessageSquare,
-  History,
-  Settings,
-  User,
-  Plus,
-  Search,
-  Archive,
-  Trash2,
-  Table,
-} from "lucide-react";
 import { HugeiconsIcon } from "@hugeicons/react";
 import {
-  AddSquareIcon,
   Home03Icon,
-  Home07Icon,
   Logout02Icon,
   Settings01Icon,
   StarsIcon,
-  TableIcon,
-  ChartIcon,
-  UserIcon,
-  WalletIcon,
   Analytics01Icon,
   ArrowDataTransferDiagonalIcon,
 } from "@hugeicons/core-free-icons";
@@ -36,10 +17,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
-import { SidebarMenuButton } from "./ui/sidebar";
 import { Avatar, AvatarFallback } from "./ui/avatar";
-import Link from "next/link";
-import { ThemeToggle } from "@/components/theme-toggle";
 import { createClient } from "@/lib/supabase/client";
 import type { User as SupabaseUser } from "@supabase/supabase-js";
 import { usePathname, useRouter } from "next/navigation";
@@ -59,8 +37,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, onToggle }) => {
   const router = useRouter();
   const pathname = usePathname();
   const supabase = createClient();
-  const [isCreateDialogOpen, setIsCreateDialogOpen] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
 
   // Sincroniza el estado del dialog con el hash de la URL
@@ -116,9 +93,11 @@ export const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, onToggle }) => {
 
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange((event: any, session: any) => {
-      setUser(session?.user ?? null);
-    });
+    } = supabase.auth.onAuthStateChange(
+      (event: string, session: { user: SupabaseUser | null } | null) => {
+        setUser(session?.user ?? null);
+      }
+    );
 
     return () => subscription.unsubscribe();
   }, [supabase.auth]);
@@ -127,11 +106,6 @@ export const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, onToggle }) => {
     await supabase.auth.signOut();
     router.push("/");
     router.refresh();
-  };
-
-  const getColorClass = (color: string) => {
-    const colorOption = COLOR_OPTIONS.find((c) => c.value === color);
-    return colorOption?.bg || "bg-blue-500";
   };
 
   // Configuración de los elementos del menú

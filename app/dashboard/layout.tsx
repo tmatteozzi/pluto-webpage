@@ -2,7 +2,7 @@ import type React from "react";
 import { createServerClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { DashboardWrapper } from "@/components/DashboardWrapper";
-import { WalletProvider } from "@/app/contexts/WalletContext";
+import { WalletProvider } from "../contexts/WalletContext";
 
 export default async function DashboardLayout({
   children,

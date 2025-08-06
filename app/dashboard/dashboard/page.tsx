@@ -2,27 +2,15 @@
 
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { HugeiconsIcon } from "@hugeicons/react";
 import {
-  CalendarIcon,
-  ChartIcon,
   MoneyBag02Icon,
   PieChart04Icon,
   TransparencyIcon,
-  WalletIcon,
 } from "@hugeicons/core-free-icons";
-import { Calendar, Info, TrendingUp, TrendingDown } from "lucide-react";
+import { TrendingUp, TrendingDown } from "lucide-react";
 
 export default function DashboardPage() {
-  const [selectedPeriod, setSelectedPeriod] = useState("6 meses");
-  const [selectedCurrency, setSelectedCurrency] = useState("AR ARS-OFI");
-  const [hideZeroAccounts, setHideZeroAccounts] = useState(false);
-  const [selectedTab, setSelectedTab] = useState("balance");
-
   return (
     <div className="min-h-screen p-2 pt-15 bg-background">
       <div className="w-full mx-auto space-y-2">
