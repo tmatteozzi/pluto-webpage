@@ -1,39 +1,61 @@
 "use client";
 
+import { ArrowUpIcon } from "lucide-react";
+
 export default function Hero() {
   return (
-    <section className="h-screen w-full flex items-center justify-center bg-black relative overflow-visible">
-      <div className="flex flex-col items-center justify-start h-full pt-36 w-xl">
-        <h1 className="text-5xl md:text-2xl lg:text-6xl text-center font-[600] text-white mb-6 tracking-tight leading-[1]">
-          Try Pluto AI
-        </h1>
-        <p className="text-lg leading-[1.4] text-neutral-400 text-center">
-          Deja que Pluto AI organize tus gastos, transfiera a tus contactos y te
-          asista con todas tus finanzas
-        </p>
-        <div className="flex gap-2 mt-6">
-          <button className="bg-[#262626] text-white px-4 py-2 rounded-2xl font-medium">
-            Download the app
-          </button>
-          <button className="bg-white text-black px-10 py-2 rounded-2xl font-medium">
-            Get Started
-          </button>
+    <section className="h-[100svh] w-full bg-black text-white flex flex-col">
+      {/* Contenido principal centrado */}
+      <div className="flex-1 w-full flex items-center justify-center">
+        <div className="w-full max-w-2xl mx-auto flex flex-col items-center">
+          <h1 className="text-[44px] md:text-[56px] lg:text-5xl font-semibold tracking-tight text-center mb-6">
+            Ask Pluto for your money
+          </h1>
+
+          {/* Caja de entrada estilo ChatGPT */}
+          <div className="w-full">
+            <div className="rounded-3xl bg-card pt-4 pl-5 pr-1.5 pb-1.5">
+              <div className="flex items-center gap-3 relative">
+                <textarea
+                  placeholder="Pregunta lo que quieras"
+                  className="flex-1 bg-transparent placeholder:text-neutral-500 text-base md:text-base focus:outline-none resize-none min-h-[100px] max-h-[200px] overflow-y-auto table-scroll"
+                  rows={2}
+                />
+                <button className="absolute right-0 bottom-0 rounded-full bg-neutral-800 hover:bg-neutral-700 text-white/90 text-sm md:text-base px-3 py-3 transition-colors">
+                  <ArrowUpIcon className="w-4 h-4" />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Acciones rápidas */}
+          {/* <div className="flex flex-wrap justify-center gap-3 mt-10">
+            <button className="rounded-full bg-neutral-900 border border-white/10 hover:bg-neutral-800 transition-colors text-white/90 text-sm md:text-base px-4 py-2">
+              Resume un texto
+            </button>
+            <button className="rounded-full bg-neutral-900 border border-white/10 hover:bg-neutral-800 transition-colors text-white/90 text-sm md:text-base px-4 py-2">
+              Ayúdame a escribir
+            </button>
+            <button className="rounded-full bg-neutral-900 border border-white/10 hover:bg-neutral-800 transition-colors text-white/90 text-sm md:text-base px-4 py-2">
+              Ofrece consejos
+            </button>
+            <button className="rounded-full bg-neutral-900 border border-white/10 hover:bg-neutral-800 transition-colors text-white/90 text-sm md:text-base px-4 py-2">
+              Propone ideas
+            </button>
+            <button className="rounded-full bg-neutral-900 border border-white/10 hover:bg-neutral-800 transition-colors text-white/90 text-sm md:text-base px-4 py-2">
+              Más
+            </button>
+          </div> */}
         </div>
       </div>
-      <div className="w-lg aspect-square bg-white absolute blur-xl -bottom-[316px] rounded-full left-1/2 -translate-x-1/2"></div>
-      {/* <div className="custom-shape-divider-bottom-1754088585 z-10">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-            className="shape-fill"
-          ></path>
-        </svg>
-      </div> */}
+
+      {/* Aviso legal inferior */}
+      <div className="w-full flex items-center justify-center pb-6">
+        <p className="text-[11px] text-neutral-400 text-center max-w-2xl px-4">
+          Al enviar un mensaje a ChatGPT, aceptas nuestros Términos y reconoces
+          que leíste nuestra Política de privacidad.
+        </p>
+      </div>
     </section>
   );
 }
